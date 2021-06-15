@@ -9,7 +9,7 @@ if ($manageInviteFormContainer.length != 0) {
         const baseUrl = 'http://localhost:5000';
         let fullName = $('#fullNameInput').val();
         let email = $('#emailInput').val();
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         console.log(userId);
         let webFormData = new FormData();
         webFormData.append('recipientName', fullName);
