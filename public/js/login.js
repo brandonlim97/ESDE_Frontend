@@ -26,7 +26,7 @@ if ($loginFormContainer.length != 0) {
                 if (userData.role_name == 'user') {
                     localStorage.setItem('token', userData.token);
                     // localStorage.setItem('user_id', userData.user_id);
-                  
+                    localStorage.setItem('role_name', userData.role_name);
                     window.location.replace('user/manage_submission.html');
                     return;
                 }
