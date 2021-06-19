@@ -8,10 +8,10 @@ if ($searchDesignFormContainer.length != 0) {
         event.preventDefault();
         const baseUrl = 'http://localhost:5000';
         let searchInput = $('#searchInput').val();
-        let token = localStorage.getItem('token');
+        let userId = localStorage.getItem('token');
         axios({
                 headers: {
-                    'authorization': token
+                    'user': userId 
                 },
                 method: 'get',
                 url: baseUrl + '/api/user/process-search-design/1/' + searchInput,
@@ -29,6 +29,7 @@ if ($searchDesignFormContainer.length != 0) {
                 let $dataBlockContainer = $('#dataBlock');
                 $dataBlockContainer.empty();
                 $pageButtonContainer.empty();
+                console.log(response);
                 if (records.length == 0) {
                     new Noty({
                         type: 'information',
@@ -86,7 +87,7 @@ if ($searchDesignFormContainer.length != 0) {
     function clickHandlerForPageButton(event) {
         event.preventDefault();
         const baseUrl = 'http://localhost:5000';
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         let pageNumber = $(event.target).text().trim();
         let searchInput = $('#searchInput').val();
         console.log(pageNumber);

@@ -10,7 +10,7 @@ if ($updateDesignFormContainer.length != 0) {
         //Collect fileId value from the input element, fileIdInput (hidden input element)
         let fileId = $('#fileIdInput').val();
         //Obtain user id from local storage
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         //Collect design title and description input
         let designTitle = $('#designTitleInput').val();
         let designDescription = $('#designDescriptionInput').val();
@@ -60,7 +60,7 @@ if ($updateDesignFormContainer.length != 0) {
         let arrayData = query.split("=");
         let fileId = arrayData[1];
         console.dir('Obtained file id from URL : ', fileId);
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         axios({
                 headers: {
                     'user': userId

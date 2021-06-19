@@ -7,7 +7,7 @@ if ($submitDesignFormContainer.length != 0) {
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
         const baseUrl = 'http://localhost:5000';
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         let designTitle = $('#designTitleInput').val();
         let designDescription = $('#designDescriptionInput').val();
         let webFormData = new FormData();

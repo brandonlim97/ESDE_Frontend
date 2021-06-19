@@ -10,7 +10,7 @@ if ($profileContainer.length != 0) {
 
         const baseUrl = 'http://localhost:5000';
 
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         axios({
             headers: {
              'user': userId

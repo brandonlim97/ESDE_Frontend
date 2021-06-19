@@ -83,7 +83,7 @@ if ($searchUserFormContainer.length != 0) {
     function clickHandlerForPageButton(event) {
         event.preventDefault();
         const baseUrl = 'http://localhost:5000';
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         let pageNumber = $(event.target).text().trim();
         let searchInput = $('#searchInput').val();
         console.log(pageNumber);

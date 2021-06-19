@@ -1,3 +1,6 @@
+if (localStorage.getItem('role_name') != 'admin'){
+    window.location.href ='/user/manage_submission.html'
+}
 let $searchDesignFormContainer = $('#searchUserFormContainer');
 if ($searchDesignFormContainer.length != 0) {
     console.log('Search user form detected in manage user interface. Binding event handling logic to form elements.');
@@ -86,7 +89,7 @@ if ($searchDesignFormContainer.length != 0) {
     function clickHandlerForPageButton(event) {
         event.preventDefault();
         const baseUrl = 'http://localhost:5000';
-        let userId = localStorage.getItem('user_id');
+        let userId = localStorage.getItem('token');
         let pageNumber = $(event.target).text().trim();
         let searchInput = $('#searchInput').val();
         console.log('Checking the button page number which raised the click event : ', pageNumber);
