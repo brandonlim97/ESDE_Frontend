@@ -1,3 +1,6 @@
+if (localStorage.getItem('role_name') != 'admin'){
+    window.location.href ='/user/manage_submission.html'
+}
 let $searchUserFormContainer = $('#searchUserFormContainer');
 if ($searchUserFormContainer.length != 0) {
     console.log('Search user form detected in user manage submission interface. Binding event handling logic to form elements.');

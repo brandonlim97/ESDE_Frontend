@@ -1,3 +1,6 @@
+if (localStorage.getItem('role_name') != 'admin'){
+    window.location.href ='/user/manage_submission.html'
+}
 let $updateUserFormContainer = $('#updateUserFormContainer');
 if ($updateUserFormContainer.length != 0) {
     console.log('Update User form is detected. Binding event handling logic to form elements.');

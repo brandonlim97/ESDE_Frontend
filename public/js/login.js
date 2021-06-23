@@ -41,7 +41,7 @@ if ($loginFormContainer.length != 0) {
             })
             .catch(function(response) {
                 //Handle error
-                console.dir(response);
+                console.log(response);
                 new Noty({
                     type: 'error',
                     layout: 'topCenter',
