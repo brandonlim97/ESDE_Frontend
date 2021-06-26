@@ -16,7 +16,7 @@ if ($profileContainer.length != 0) {
              'user': userId
             },
             method: 'get',
-            url: baseUrl + '/api/user/' + userId,
+            url: baseUrl + '/api/user/profile',
             })
             .then(function(response) {
                 //Using the following to inspect the response.data data structure
