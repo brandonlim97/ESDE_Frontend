@@ -3,8 +3,8 @@ const express=require('express');
 const serveStatic=require('serve-static');
 
 
-var hostname="localhost";
-var port=3001;
+//var hostname="ec2-18-142-26-4.ap-southeast-1.compute.amazonaws.com";
+var port= process.env.PORT || 3001;
 
 
 var app=express();
@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 });
 
 
-app.listen(port,hostname,function(){
+app.listen(port,function(){
 
-    console.log(`Server hosted at http://${hostname}:${port}`);
+    console.log(`Server hosted at ${port}`);
 });
