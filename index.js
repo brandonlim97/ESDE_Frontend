@@ -4,7 +4,7 @@ const serveStatic=require('serve-static');
 
 
 //var hostname="ec2-18-142-26-4.ap-southeast-1.compute.amazonaws.com";
-var port= process.env.PORT || 80;
+var port= process.env.PORT || 3001;
 
 
 var app=express();
