@@ -7,7 +7,7 @@ if ($registerFormContainer.length != 0) {
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
         //const baseUrl = 'http://localhost:5000';
-        const baseUrl = '52.20.150.86:5000';
+        const baseUrl = 'http://52.20.150.86:5000';
         let fullName = $('#fullNameInput').val();
         let email = $('#emailInput').val();
         let password = $('#passwordInput').val();

@@ -7,7 +7,7 @@ if ($updateDesignFormContainer.length != 0) {
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
         //const baseUrl = 'http://localhost:5000';
-        const baseUrl = '52.20.150.86:5000';
+        const baseUrl = 'http://52.20.150.86:5000';
         //Collect fileId value from the input element, fileIdInput (hidden input element)
         let fileId = $('#fileIdInput').val();
         //Obtain user id from local storage
@@ -56,7 +56,7 @@ if ($updateDesignFormContainer.length != 0) {
 
     function getOneData() {
         //const baseUrl = 'http://localhost:5000';
-        const baseUrl = '52.20.150.86:5000';
+        const baseUrl = 'http://52.20.150.86:5000';
         //Get the fileId information from the web browser URL textbox
         let query = window.location.search.substring(1);
         let arrayData = query.split("=");

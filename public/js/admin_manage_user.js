@@ -10,7 +10,7 @@ if ($searchDesignFormContainer.length != 0) {
     $('#submitButton').on('click', function(event) {
         event.preventDefault();
         //const baseUrl = 'http://localhost:5000';
-        const baseUrl = '52.20.150.86:5000';
+        const baseUrl = 'http://52.20.150.86:5000';
         let searchInput = $('#searchInput').val();
         let userId = localStorage.getItem('token');
         axios({
@@ -90,7 +90,7 @@ if ($searchDesignFormContainer.length != 0) {
     function clickHandlerForPageButton(event) {
         event.preventDefault();
         //const baseUrl = 'http://localhost:5000';
-        const baseUrl = '52.20.150.86:5000';
+        const baseUrl = 'http://52.20.150.86:5000';
         let userId = localStorage.getItem('token');
         let pageNumber = $(event.target).text().trim();
         let searchInput = $('#searchInput').val();

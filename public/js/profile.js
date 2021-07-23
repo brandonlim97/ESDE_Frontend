@@ -9,7 +9,7 @@ if ($profileContainer.length != 0) {
     function getOneUser() {
 
         //const baseUrl = 'http://localhost:5000';
-        const baseUrl = '52.20.150.86:5000';
+        const baseUrl = 'http://52.20.150.86:5000';
 
         let userId = localStorage.getItem('token');
         axios({
